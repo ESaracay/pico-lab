@@ -33,5 +33,5 @@ If you want to understand where all the random values in my memmap come from you
 
  Time on the pico is tricky. The Pico has a lot of registers for setting up the system clock and the clock speed of individual peripherals. The image below gives a good general idea on whats happening with the system clock and the various sources it can have. The lab will quickly go over how to get access to time in the way that I believe is correct. Unfortunately it is not very accurate but I think theres just an errata somewhere that I can't seem to find. My other "janky" approach is included within the provided programs. It's not very pretty and I honestly just threw together a bunch of consistent values to make it work. The errate below proves that its not a great solution. I love how the data sheet says that the workaround is to just not use the registers instead of giving some other options for counting time.
 
-![Pico Clock Setup Diagram](../docs/images/ksnip_20221126-023626.png)
+![Pico Clock Setup Diagram](../docs/images/clocks.png)
 ![Pico Errata](../docs/images/clock_errate.png)
