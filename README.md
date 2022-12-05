@@ -27,12 +27,12 @@ Here are a list of things you have to get done for this part
 3. update meson.build file
 4. build everything
 
-Note: GPIO_OE (output enable) is a stupid name. It's not only for output.
+Note: GPIO_OE (output enable) is a stupid name. It's not only for output. Basically all GPIO Pins will be input by default but just in case were switching between output and input we'll set it explicitly in gpio_set_input.
 
 ![GPIO_OE](docs/images/gpio_oe.png)
 
 ## Part 3 (0-Blinker)
-Now lets test that you're code from part 2 actually works. Copy your cross file to the programs directory then enter the programs directory and follow the directions in 0-blinker.
+Now lets test that you're code from part 2 actually works. Copy your cross file to the programs directory then enter the programs directory and follow the directions in 0-blinker. If you want to speed up the process of converting your mymain.bin to a uf2 file try adding bin-uf2-converter to this directory and combine the makefiles.  
 
 ## Part 4 (Non Jank way of doing time)
 The clock.c file inside of the library directory is far from the best solution. It's the duct taped solution that works because all of my errors are consistent. In the 1-timer program we will attempt to fix this. Note: that the resulting code has some bugs but hopefully I'll find the one random register I'm missing. Enter the program directory and follow the direcitons in 1-timer
