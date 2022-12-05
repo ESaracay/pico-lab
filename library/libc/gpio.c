@@ -38,10 +38,6 @@ void gpio_set_output(uint32_t pin) {
     // 2. Clear output
     // 3. Function select SIO use IO_BANK_BASE_CTRL
     // 4. Set as output 
-    PUT32(GPIO_OE_CLR, 1 << pin);
-    PUT32(GPIO_OUT_CLR, 1 << pin);
-    PUT32(IO_BANK_BASE_CTRL + offset, SIO);
-    PUT32(GPIO_OE_SET, 1 << pin);
 }
 
 // TODO: pg.42 in rp2040 datasheet
