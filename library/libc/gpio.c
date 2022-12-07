@@ -49,3 +49,9 @@ void gpio_set_on(uint32_t pin) {
 void gpio_set_off(uint32_t pin) {
     return;
 }
+
+//TODO: Only If you're doing the hw-uart lab do you have to write the gpio_set_function.
+// You can comeback to this later if you want
+void gpio_set_function(uint32_t pin, gpio_func_t func) {
+    return;
+}

@@ -4,6 +4,7 @@ This is the non janky way of counting time. I believe this is the intended way o
 ## Step 1
 By default the pico boots off the ROSC oscillator which is not accurate at all. This is meant to save power and if you care about microsecond timing we need to use the XOSC crystal oscillator. Fill out the TODO's in clock.c to get the XOSC up and running. The following pages/images should be helpful.
 1. Pg. 243 XOSC section 
+2. Pg. 221 Clock Registers
 ![ROSC to XOSC](../../docs/images/ROsC.png)
 ![XOSC Usage](../../docs/images/XOSC.png)
 ![Timer](../../docs/images/Timer.png)

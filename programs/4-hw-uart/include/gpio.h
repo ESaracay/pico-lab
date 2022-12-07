@@ -82,7 +82,7 @@ void gpio_set_on(uint32_t pin);
 
 void gpio_set_off(uint32_t pin);
 
-uint32_t gpio_read(uint32_t pin);
+void gpio_read(uint32_t pin);
 
 // write either 1 or 0
 void gpio_write(uint32_t pin, uint32_t val);
