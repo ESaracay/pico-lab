@@ -46,7 +46,7 @@ Copy over your clock.c to this directory. This is basically a printf implementat
 ## Part 7 (UART)
 For some odd reason even though our clocks are kind of screwed up we can still use peripheral devices at really fast speeds. This leads me to believe that there could be a cap on how fast GPIO pins in the SIO mode can switch on and off. Anyways you can look inside of this directory for instruction on how to get the hardware uart running with a baudrate of 115200!
 
-## Part 7 (Extensions)
+## Part 8 (Extensions)
 1. Try finding a reliable source of time :)
 2. See if you can get a faster baud rate for sw-uart
 3. Copy a lab from 240lx and get it working on the pico
